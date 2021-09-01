@@ -1,26 +1,26 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     var $header = $('header');
     var $sticky = $header.before($header.clone().addClass("sticky"));
 
-    $(window).on("scroll", function(){
-      var scrollFromTop = $(window).scrollTop();
-      $("body").toggleClass("scroll", (scrollFromTop > 350));
+    $(window).on("scroll", function () {
+        var scrollFromTop = $(window).scrollTop();
+        $("body").toggleClass("scroll", (scrollFromTop > 150));
     });
 
-      //SMOOTH SCROLL
-      $('.menu li a[href^="#"]').on('click', function(e){
-          e.preventDefault();
+    //SMOOTH SCROLL
+    $('.menu li a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
 
-          var target = $(this.hash);
+        var target = $(this.hash);
 
-          if (target.length) {
-              $('html, body').stop().animate({
-                  scrollTop: target.offset().top -60
-              }, 1000);
-          }
+        if (target.length) {
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top - 60
+            }, 1000);
+        }
 
-      });
+    });
 
 
 
