@@ -493,7 +493,7 @@ div.container {
 
 /*Footer starts*/
 footer {
-    background: #474747;
+    background: #202124;
 }
 .container1 {
     width: 80%;
@@ -522,6 +522,7 @@ footer {
 .footer-copy {
     font-weight: 300;
     margin: auto;
+    color: #fff;
 }
 
 .footer-link {
@@ -573,6 +574,7 @@ footer {
     border-top: 2px solid #fff;
     font-size: .80rem;
     text-align: center;
+    color: #ffffff;
 }
 .footer-copyright:after {
     content: "rauljaciel_91@hotmail.com";
