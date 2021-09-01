@@ -1,0 +1,523 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+
+header{
+    background: rgba(0, 0, 0, 0.80);
+    width: 100%;
+    position: relative;
+}   
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.80);
+    transform: translateY(-200%);
+    transition: 0.2s;
+}
+
+.scroll .sticky {
+    transform: translateY(0);
+    transition: 0.2s;
+}
+
+.nav-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    padding: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-top {
+    max-width: 300px;
+    max-height: 80px;
+    margin: 0;
+   
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 0;
+}
+
+
+.menu-btn {
+    font-size: 17px;
+    line-height: 22px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+.home-btn  {
+    font-size: 17px;
+    line-height: 22px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    background: transparent;
+}
+
+.home-btn:hover {
+    background: #468DFF;
+    transition: 0.3s;
+}
+
+.dropdown-btn {
+    font-size: 17px;
+    line-height: 22px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: 0.3s;
+    background: transparent;
+    outline: none;
+    border: 0;
+}
+
+.dropdown-btn:hover {
+    border-bottom: 1px solid #ffffff;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: #468DFF;
+    min-width: 190px;
+    z-index: 1;
+    width: 100%;
+    overflow: auto;
+     
+}
+
+.dropdown ul {
+    list-style-type: none;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 15px 0;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+}
+
+.dropdown-content a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*header bar + nav bar ENDS*/
+
+/*HEADER BTN START*/
+
+
+
+.cover-main {
+    background:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), 
+    url('../assets/cerrajero-guadalajara.jpg') right bottom;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul#scene li.name {
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+}
+
+ul#scene{
+    margin-top: 100px;
+    margin-left: 450px;
+    
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.btn {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+div ul li a {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+div ul li a.primero {
+    margin-right: 20px;
+    background: #468DFF;
+    color: #19181A;
+}
+div ul li a.segundo {
+    margin-left: 20px;
+    background: #4BEC68;
+    color: #19181A;
+    font-weight: 600;
+}
+
+div ul li a.primero:hover {
+    background: #0963f5;
+    transition: 0.3s;
+
+}
+
+div ul li a.segundo:hover {
+    background: #009688;
+    transition: 0.3s;
+    
+}
+
+/*HEADER BTN ENDS*/
+
+/*MAIN*/
+
+.main {
+    background: #EDEDED;
+    
+}
+
+section.container {
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    max-width: 1200px;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+/*Locksmith*/
+
+.locksmith {
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding: 30px 0 60px;
+}
+
+.locksmith-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.slogan {
+    margin: 20px 0;
+}
+
+.answer-slogan {
+    font-weight: 700;
+    color: #468DFF;
+    margin-bottom: 20px;
+}
+
+.locksmith-parragraph {
+    text-align: left;
+    line-height: 1.5;
+    font-style: italic;
+    color: #615a5a;
+}
+
+.locksmith-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/*locksmith ends*/
+
+/*card starts*/
+
+div.container {
+    width: 80%;
+    overflow: hidden;
+    max-width: 1200px;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.title-card {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.card-copy {
+    margin-top: 20px;
+}
+
+.card-container {
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    ".      card1      ."
+    "card2  card1  card3"
+    "card2  card4  card3"
+    ".      card4      .";
+}
+
+.card-item {
+    padding: 20px;
+    background: #fff;
+    border-top: 5px solid #468DFF;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card-img {
+    background: #468DFF;
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.card-paragraph {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.card-item:nth-last-of-type(1){
+    grid-area: card1;
+}
+
+.card-item:nth-last-of-type(2){
+    grid-area: card2;
+}
+
+.card-item:nth-last-of-type(3){
+    grid-area: card3;
+}
+
+.card-item:nth-last-of-type(4){
+   grid-area: card4; 
+}
+
+/*card ends*/
+
+
+/*about starts*/
+
+.about {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    place-items: center;
+}
+
+.about-locksmith {
+    width: 90%;
+}
+
+.about-parragraph {
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: left;
+}
+
+.about-picture {
+    text-align: center;
+}
+
+.about-img {
+    width: 95%;
+}
+
+.title-about {
+    font-size: 2.5rem;
+    text-align: left;
+    color: #468DFF;
+}
+
+.title--border::after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    height: 4px;
+    background: #468DFF;
+}
+
+.cta {
+    display: inline-block;
+    background: #468DFF;
+    color: #fff;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*about ends*/
+
+/* * WHY-US*/
+
+.container{
+    width:90%; 
+    max-width: 1200px; 
+    padding: 100px 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*Footer starts*/
+footer {
+    background: #474747;
+}
+.container1 {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.footer {
+    position: relative;
+    padding: 0;
+}
+
+.footer-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: auto;
+  
+}
+
+.title1 {
+    color: #fff;
+}
+
+.footer-copy {
+    font-weight: 300;
+    margin: auto;
+}
+
+.footer-link {
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer-icon {
+    width: 30px;
+}
+
+.footer-icon1 {
+    height: 40px;
+    padding-top: 15px;
+    padding-bottom: 0;
+}
+
+.footer-picture {
+    margin: 0;
+}
+
+.footer-img {
+   
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.footer-social {
+    display: flex;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-picture {
+    grid-column: 3/-1;
+}
+
+.footer-copyright {
+    padding-top: 10px;
+    border-top: 2px solid #fff;
+    font-size: .80rem;
+    text-align: center;
+}
+.footer-copyright:after {
+    content: "rauljaciel_91@hotmail.com";
+}
+
